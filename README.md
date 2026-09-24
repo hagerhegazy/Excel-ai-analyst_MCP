@@ -93,7 +93,7 @@ Open `http://localhost:8501` in your browser.
 - `Give me 3 insights about the relationship between grade and score, with a scatter plot.`
 - `Create a Summary sheet with average, highest, and lowest score, add a rank column to the Students sheet, then chart grade vs. score.`
 
-## ⚙️ Configuration
+## Configuration
 
 | Setting | Where | Notes |
 |---|---|---|
@@ -101,24 +101,24 @@ Open `http://localhost:8501` in your browser.
 | Workbook | `students.xlsx` | Upload a different file from the sidebar; it is saved as `students.xlsx`. |
 | Output limit | `task_server.py` (`MAX_OUTPUT`) | Keeps tool output short to save tokens. |
 
-## 🛠️ Troubleshooting
+## Troubleshooting
 
 - **Rate limit (429) errors**: Groq's free tier has token limits. Wait a minute or switch models.
 - **`tool_use_failed` / "python tool not enabled"**: some models try to call a built-in `python` tool. The tool here is named `run_excel_code` and the prompt tells the model to use only that.
 - **Permission error when saving**: close `students.xlsx` in Excel first.
 
-## ⚠️ Security note
+## Security note
 
 The MCP server executes model-generated Python code on your machine. Run it locally with files you trust, and do not expose it publicly without sandboxing (for example, Docker with no network access).
 
-## 🗺️ Roadmap
+## Roadmap
 
 - [ ] Multiple workbooks
 - [ ] Interactive charts (Plotly)
 - [ ] Sandboxed code execution
 - [ ] Export chat reports to PDF
 
-## 🤝 Contributing
+## Contributing
 
 Issues and pull requests are welcome.
 
