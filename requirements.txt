@@ -1,0 +1,11 @@
+mcp
+langchain-mcp-adapters
+langchain-groq
+python-dotenv
+openpyxl
+pandas
+numpy
+langchain 
+langchain-openai
+streamlit 
+matplotlib
