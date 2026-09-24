@@ -4,10 +4,10 @@ Chat with your Excel files in plain English. Ask for calculations, edits, insigh
 
 Built with **MCP (Model Context Protocol)**, **Groq**, **LangGraph**, and **Streamlit**.
 
-<!-- Add a screenshot or GIF here -->
-<!-- ![Demo](demo.gif) -->
+![Chat example](Charts/student_grade_score.png)
+![Chart example](Charts/student_grade_score.png)
 
-## ✨ Features
+## Features
 
 - 💬 **Natural-language interface**: no formulas, no code
 - 📖 **Read and inspect** any sheet in your workbook
@@ -17,7 +17,7 @@ Built with **MCP (Model Context Protocol)**, **Groq**, **LangGraph**, and **Stre
 - 🔁 **Self-correcting agent**: if its code fails, it reads the error and retries
 - 📤 **Upload and download** your workbook from the sidebar
 
-## 🏗️ How it works
+## How it works
 
 ```
 Streamlit UI (app.py)
@@ -37,19 +37,19 @@ Runs Python (pandas, openpyxl, matplotlib) on students.xlsx
 3. The server runs the Python code, and the result (or error) goes back to the agent.
 4. The agent loops until done, then answers. Any charts saved in `charts/` appear in the UI.
 
-## 📁 Project structure
+## Project structure
 
 ```
 ├── app.py            # Streamlit UI
 ├── agent.py          # LangGraph agent + MCP client + Groq
 ├── task_server.py    # MCP server with the code-execution tool
 ├── requirements.txt
-├── .env              # your GROQ_API_KEY (not committed)
+├── .env              # your GROQ/OPENROUTER/.._API_KEY (not committed)
 ├── students.xlsx     # default workbook
 └── charts/           # generated charts (created automatically)
 ```
 
-## 🚀 Getting started
+## Getting started
 
 ### 1. Clone the repo
 
@@ -84,7 +84,7 @@ streamlit run app.py
 
 Open `http://localhost:8501` in your browser.
 
-## 💡 Example prompts
+## Example prompts
 
 - `Show me all students.`
 - `Make a new sheet called Average that contains the average of scores.`
