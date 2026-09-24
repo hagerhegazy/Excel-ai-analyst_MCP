@@ -5,7 +5,7 @@ Chat with your Excel files in plain English. Ask for calculations, edits, insigh
 Built with **MCP (Model Context Protocol)**, **Groq**, **LangGraph**, and **Streamlit**.
 
 ![Chat example](Charts/student_grade_score.png)
-![Chart example](Charts/sheet_aaverage.png)
+![Chart example](Charts/sheet_average.png)
 
 ## Features
 
