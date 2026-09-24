@@ -104,7 +104,6 @@ Open `http://localhost:8501` in your browser.
 ## Troubleshooting
 
 - **Rate limit (429) errors**: Groq's free tier has token limits. Wait a minute or switch models.
-- **`tool_use_failed` / "python tool not enabled"**: some models try to call a built-in `python` tool. The tool here is named `run_excel_code` and the prompt tells the model to use only that.
 - **Permission error when saving**: close `students.xlsx` in Excel first.
 
 ## Security note
