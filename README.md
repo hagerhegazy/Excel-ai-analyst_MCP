@@ -3,7 +3,7 @@
 Chat with your Excel files in plain English. Ask for calculations, edits, insights, and charts, and an AI agent does the work for you.
 
 Built with **MCP (Model Context Protocol)**, **Groq**, **LangGraph**, and **Streamlit**.
-
+## More Examples in UI folder
 ![Chat example](Charts/student_grade_score.png)
 ![Chart example](Charts/sheet_average.png)
 
